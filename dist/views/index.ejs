@@ -1,0 +1,223 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="x-apple-disable-message-reformatting" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="supported-color-schemes" content="light dark" />
+  <title></title>
+  <style type="text/css" rel="stylesheet" media="all">
+    /* Base ------------------------------ */
+
+    @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:400,700&display=swap");
+
+    body {
+      width: 100% !important;
+      height: 100%;
+      margin: 0;
+      -webkit-text-size-adjust: none;
+    }
+
+    a {
+      color: #3869d4;
+    }
+
+    a img {
+      border: none;
+    }
+
+    td {
+      word-break: break-word;
+    }
+
+    .preheader {
+      display: none !important;
+      visibility: hidden;
+      mso-hide: all;
+      font-size: 1px;
+      line-height: 1px;
+      max-height: 0;
+      max-width: 0;
+      opacity: 0;
+      overflow: hidden;
+    }
+
+    /* Type ------------------------------ */
+
+    body,
+    td,
+    th {
+      font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+    }
+
+    h1 {
+      margin-top: 0;
+      color: #333333;
+      font-size: 22px;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #333333;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    h3 {
+      margin-top: 0;
+      color: #333333;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    td,
+    th {
+      font-size: 16px;
+
+
+    }
+
+    p,
+    ul,
+    ol,
+    blockquote,
+    h1,
+    h2,
+    h3,
+    span,
+    .purchase_item {
+      color: #FFF !important;
+    }
+
+    .attributes_content,
+    .discount {
+      background-color: #222 !important;
+    }
+
+    .email-masthead_name {
+      text-shadow: none !important;
+    }
+
+    :root {
+      color-scheme: light dark;
+      supported-color-schemes: light dark;
+    }
+  </style>
+  <!--[if mso]>
+    <style type="text/css">
+      .f-fallback  {
+        font-family: Arial, sans-serif;
+      }
+    </style>
+  <![endif]-->
+</head>
+
+<body style="background-color: black;">
+  <span class="preheader">Thanks for trying out GrowGrade. We’ve pulled together some information and resources to
+    help you get started.</span>
+  <table class="email-wrapper" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+    <tr>
+      <td align="center">
+        <table class="email-content" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+          <tr>
+            <td class="email-masthead">
+              <a href="https://example.com" class="f-fallback email-masthead_name">
+                [Product Name]
+              </a>
+            </td>
+          </tr>
+          <!-- Email Body -->
+          <tr>
+            <td class="email-body" width="570" cellpadding="0" cellspacing="0">
+              <table class="email-body_inner" align="center" width="570" cellpadding="0" cellspacing="0"
+                role="presentation">
+                <!-- Body content -->
+                <tr>
+                  <td class="content-cell">
+                    <div class="f-fallback">
+                      <h1>Welcome, <%= data.schoolName%>
+                      </h1>
+                      <p>Thanks for choosing us , your otp is <%-data.token%></p>
+                      <!-- Action -->
+                      <table class="body-action" align="center" width="100%" cellpadding="0" cellspacing="0"
+                        role="presentation">
+                        <tr>
+                          <td align="center">
+                            <!-- Border based button
+           https://litmus.com/blog/a-guide-to-bulletproof-buttons-in-email-design -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
+                              <tr>
+                                <td align="center">
+                                  <a   href="<%- data.link %>" class="f-fallback button" target="_blank" style="background-color: blue ; color: white; font-size: 20px; font-weight: bolder;
+                                  display: flex; align-items: center; justify-content: center; 
+                                  ">
+                                    VERIFY YOUR ACCOUNT
+                                  </a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+
+                      <table class="attributes" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                        <tr>
+                          <td class="attributes_content">
+                            <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <p>If you have any questions, feel free to <a href="mailto:{{support_email}}">email our customer
+                          success team</a>. (We're lightning quick at replying.) We also offer <a
+                          href="{{live_chat_url}}">live chat</a> during business hours.</p>
+                      <p>Thanks,
+                        <br>
+                        <%=data.schoolName%> and the GrowGrade team
+                      </p>
+                      <p><strong>P.S.</strong> Need immediate help getting started? Check out our <a
+                          href="{{help_url}}">help documentation</a>. Or, just reply to this email, the [Product Name]
+                        support team is always ready to help!</p>
+                      <!-- Sub copy -->
+                      <table class="body-sub" role="presentation">
+                        <tr>
+                          <td>
+                            <p class="f-fallback sub">use the otp code above to verify your account</p>
+
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table class="email-footer" align="center" width="570" cellpadding="0" cellspacing="0"
+                role="presentation">
+                <tr>
+                  <td class="content-cell" align="center">
+                    <p class="f-fallback sub align-center">
+                      GrowGrade
+                      <br>1234 Street Rd.
+                      <br>Suite 1234
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
